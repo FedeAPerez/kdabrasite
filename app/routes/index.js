@@ -1,6 +1,6 @@
 // routes/index.js
-const kdabraRoutes = require('./kdabra_routes');
+const userRoutes = require('./user_routes');
 
 module.exports = function() {
-  kdabraRoutes();
+  userRoutes();
 };

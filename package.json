@@ -4,7 +4,8 @@
   "description": "Site for KDABRA app",
   "main": "server.js",
   "scripts": {
-    "test": "test server.js"
+    "test": "test server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "https": "^1.0.0",
+    "nodemon": "^1.12.1",
     "request": "^2.83.0"
   }
 }

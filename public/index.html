@@ -1,91 +1,75 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="/style/style.css">
+	<!DOCTYPE html>
+	<html ng-app="commStore" ng-controller="StoreController as storeCrl">
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script type="text/javascript" src="Scripts/SocialController.js"></script>
+		<script type="text/javascript" src="Scripts/MetricsController.js"></script>
+		<script type="text/javascript" src="Scripts/OnboardController.js"></script>
+		<script type="text/javascript" src="Scripts/app.js"></script>
+		<link rel="icon" href="Content/Imgs/favicon.ico">
+		<title>KDABRA | Comunicate.</title>
 
-	<meta charset="utf-8"></meta>
-	<title>KDABRA - Comunicate.</title>
-</head>
-<body>
-	<header class="container-fluid">
-		<h1>KDABRA</h1>
-		<h3>Para que te comuniques mejor con todos los que te importan.</h3>
-		<p>KDABRA es la herramienta de Messenger que te permite llevar tu negocio a otro nivel.</p>
-	</header>
+	</head>
+	<body>
+		<div class="wrapper">
+			<eccom-tabs>
+				
+			</eccom-tabs>
+			
+		</div>
 
-	<main>
-		<section>
-			<article>
+	</div>
 
-				<div class="container">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 
-					<div class="row">
-						<div class="col">
-							Dónde me encuentro
-						</div>
-						<div class="col-6">
-							Valor de Pregunta
-						</div>
-						<div class="col alert alert-success">
-							Modificable
-						</div>
-					</div>
 
-					<div class="row">
-						<div class="col">
-							Dónde me encuentro
-						</div>
-						<div class="col-6">
-							Valor de Pregunta
-						</div>
-						<div class="col">
-							Modificable
-						</div>
-					</div>
+	<!-- Bootstrap core CSS     -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
-					<div class="row">
-						<div class="col">
-							Dónde me encuentro
-						</div>
-						<div class="col-6">
-							Valor de Pregunta
-						</div>
-						<div class="col">
-							Modificable
-						</div>
-					</div>
+	<!-- Animation library for notifications   -->
+	<link href="assets/css/animate.min.css" rel="stylesheet"/>
 
-					<div class="row">
-						<div class="col">
-							Dónde me encuentro
-						</div>
-						<div class="col-6">
-							Valor de Pregunta
-						</div>
-						<div class="col">
-							Modificable
-						</div>
-					</div>
+	<!--  Light Bootstrap Table core CSS    -->
+	<link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
 
-				</div>
-
-			</article>
-		</section>
-	</main>
-
-	<nav>
-		<section>
-
-		</section>
-	</nav>
-
-	<footer>
-		<h1>@KDABRA | 2017 - Una idea de Doers</h1>
-	</footer>
-
+	<!--     Fonts and icons     -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+	<link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 </body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+
+<!--  Charts Plugin -->
+<script src="assets/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="assets/js/light-bootstrap-dashboard.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$.notify({
+			icon: 'pe-7s-gift',
+			message: "Bienvenido al panel de KDABRA. Acá podés ver todo lo que te interese de tu comunicación en Messenger!"
+
+		},{
+			type: 'info',
+			timer: 4000
+		});
+
+	});
+</script>
 </html>

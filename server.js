@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
   res.render('index', {});
 });
 
-var routes = require('./app/routes/kdabra_routes');
+var routes = require('./app/routes/user_routes');
 routes(app);
 
 // Start server

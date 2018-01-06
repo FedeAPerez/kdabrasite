@@ -1,7 +1,7 @@
 // routes/user_routes.js
 var userDao  = require('../daos/user_dao');
 
-module.exports = function() {
+module.exports = function(app) {
 	/*
 	*	kinda routes kinda controller
 	*/
